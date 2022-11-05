@@ -34,7 +34,7 @@ def login(s: requests.Session):
 
 
 def submit(s: requests.Session):
-    days = rrule.rrule(rrule.DAILY,dtstart=parse('2022-10-27'),until=datetime.date.today()).count()
+    days = rrule.rrule(rrule.DAILY,dtstart=parse('2022-11-05'),until=datetime.date.today()).count()
     
     pcr = 1 if(days%3==1) else 0
     PCR = str(pcr)
